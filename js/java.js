@@ -1,4 +1,7 @@
-import randomcolor from "randomcolor"
+// import randomcolor from "randomcolor"
+
+let adviceDisplay = document.getElementById ('adviceDisplay')
+let button = document.getElementById('adviceBtn')
 
 const advice = [
     "If you’re good at something, never do it for free.",
@@ -8,6 +11,13 @@ const advice = [
     "Life does not stop and start at your convenience.",
     "You know what the trouble about real life is? There's no danger music."
 ]
+
+button.addEventListener ('click', () => {
+    let randomAdvice = Math.floor (Math.random() * advice.length);
+    adviceDisplay.textContent = advice[randomAdvice]
+    adviceEye.style.backgroundColor = randomcolor ({luminosity: 'light'})
+});
+
 
 // generate random light colors: 
     // adviceEye.style.backgroundColor = randomcolor({luminosity: 'light'})
