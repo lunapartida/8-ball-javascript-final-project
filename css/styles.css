@@ -1,43 +1,88 @@
-*, html, body {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
-.container {
-    background: hotpink;
+body{
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
     height: 100vh;
+    overflow: hidden;
+}
+
+ .header {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+    text-align: center;
+    justify-content: center;
+    align-items: center
+
+}
+
+.container {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.adviceEye {
+.ball{
     width: 300px;
     height: 300px;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.inputfield{
+    display:flex;
+    justify-content: center;
+
+}
+input{
+    position: absolute;
+    top: 65vh;
+    padding: 15px 50px 15px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: left;
+    margin-top: 130px;
+
+}
+button{
+    margin:auto;
+    position:absolute;
+    top: 75vh;
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 212);
+    color: white;
+    margin-top: 110px;
+
+}
+button:hover{
+    background-color: rgb(42, 253, 0);
+}
+#response{
+    width:70px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
     text-align: center;
-    padding: 0.5em;
-    position: relative;
+    font-size: 120px;    
 }
 
-p {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   font-weight: 700;
-   transform: translate(-50%, -50%);
-}
-
-button {
-    border: none;
-    padding: 0.5em 1em;
-    margin: 1em;
-    border-radius: 5px;
-}
-
-button:hover {
-    cursor: pointer;
+.whitesurface{
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
